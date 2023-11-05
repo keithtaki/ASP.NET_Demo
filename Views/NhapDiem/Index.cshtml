@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <label>Ma: </label> <input type="text" name="id" value="@ViewBag.ma" /><br />
+        <label>Ten: </label> <input type="text" name="name" value="@ViewBag.ten" /><br />
+        <label>Diem: </label> <input type="text" name="diem" value="@ViewBag.d" /><br />
+        <label>Image: </label> <input type="file" name="myImage" /><br />
+        <img src="@ViewBag.image"/>
+        <input type="submit" value="Save" formaction="/NhapDiem/Save" />
+        <input type="submit" value="Open" formaction="/NhapDiem/Open" />
+    </form>
+</body>
+</html>
